@@ -1,12 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import Header from "@/components/Header";
+import TheorySection from "@/components/TheorySection";
+import InteractiveExamples from "@/components/InteractiveExamples";
+import PunctuationRules from "@/components/PunctuationRules";
+import Quiz from "@/components/Quiz";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Header />
+      <TheorySection />
+      <InteractiveExamples />
+      <PunctuationRules />
+      <Quiz />
+
+      <footer className="bg-gray-800 text-white py-8 text-center">
+        <p>© 2024 ЕГЭ Русский язык - Подготовка к экзамену</p>
+      </footer>
     </div>
   );
 };
